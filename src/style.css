@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div.main-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(240, 240, 240);
+    margin: 40px 0px;
+}
+
+.main-con > div{
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    box-shadow: 1px 1px 1px 2px rgba(127, 126, 126, 0.5);
+}
+
+.main-con > div :not(no){
+    margin: 10px 5px;
+}
+
+.main-con > div > div.color-con{
+   width: 100px;
+   height: 40px;
+   background-color: red;
+   border-radius:10px ;
+}
+
+h2, p{
+    text-align: left;
+}
+
+.main-con > div > div.color-con.se{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(221, 185, 25);
+    border-radius:10px ;
+ }
+
+ .main-con > div > div.color-con.th{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(232, 111, 18);
+    border-radius:10px ;
+ }
+
+ .main-con > div > div.color-con.fo{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(23, 208, 39);
+    border-radius:10px ;
+ }
+
+@media screen and (max-width:500px){
+
+    main{
+        height: 100%;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        padding: 0;
+
+    }
+
+    div.main-con{
+        
+        position: relative;
+        top: 50%;
+        left: 0;
+        transform: none;
+        margin: auto;
+
+    }
+    
+}
